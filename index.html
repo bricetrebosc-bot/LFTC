@@ -80,21 +80,10 @@
                 <legend>Choose Time frame</legend>
                 
                     <div align="center">
-                        <input type="hidden" id="M2" name="M2" value="0">
+                        
                         <input  type="checkbox" id="M2" name="M2" value="1" />
                         <label for="M2">M2   </label>
-                         
-                        <input type="hidden" id="M3" name="M3" value="0">
-                        <input  type="checkbox" id="M3" name="M3" value="1" />
-                        <label for="M3">M3   </label>
                         
-                        <input type="hidden" id="M5" name="M5" value="0">
-                        <input  type="checkbox" id="M5" name="M5" value="1" />
-                        <label for="M5">M5   </label>
-                        
-                        <input type="hidden" id="M10" name="M10" value="0">
-                        <input  type="checkbox" id="M10" name="M10" value="1" />
-                        <label for="M10">M10   </label>
                     </div>
             </fieldset>
         </form>
@@ -116,9 +105,7 @@
           const userInputNBC = document.getElementById('NBC').value;
           const userInputCCI = document.getElementById('CCI').value;
           const userInputM2 = document.getElementById('M2').value;
-          const userInputM3 = document.getElementById('M3').value;
-          const userInputM5 = document.getElementById('M5').value;
-          const userInputM10 = document.getElementById('M10').value;
+         
           const userStart = 1                 
           // const user = tg.initDataUnsafe.user; NOT SUPPORTED DURING INLINE BUTTON LAUNCH
 
@@ -128,9 +115,7 @@
            userInputNBC: userInputNBC,
            userInputCCI: userInputCCI,
            userInputM2: userInputM2,
-           userInputM3: userInputM3,
-           userInputM5: userInputM5,
-           userInputM10: userInputM10
+           
           }));
         });
         
