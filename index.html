@@ -76,14 +76,14 @@
             <input type="text" id="CCI" placeholder="ex : 150 ">
             <br><br>
             
-            <fieldset>
+            <fieldset action="/submit" methode="post">
                 <legend>Choose Time frame</legend>
                 
                     <div align="center">
-                        
-                        <input  type="checkbox" id="M2" name="M2" value="1" />
-                        <label for="M2">M2   </label>
-                        
+                        <label>
+                         <input  type="checkbox" name="tf" value="M2" >M2
+                        </label>
+                        <input  id="submit" type="submit" value="Submit"
                     </div>
             </fieldset>
         </form>
@@ -104,7 +104,7 @@
         document.getElementById('start').addEventListener('click', () => {
           const userInputNBC = document.getElementById('NBC').value;
           const userInputCCI = document.getElementById('CCI').value;
-          const userInputM2 = document.getElementById('M2').value;
+          const userTF = document.getElementById('M2').value;
          
           const userStart = 1                 
           // const user = tg.initDataUnsafe.user; NOT SUPPORTED DURING INLINE BUTTON LAUNCH
