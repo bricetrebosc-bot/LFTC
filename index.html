@@ -81,9 +81,9 @@
                 
                     <div align="center">
                         <label>
-                         <input  type="checkbox" name="tf" value="M2" >M2
+                         <input  type="checkbox" name="M2" id="TF" value="M2" >M2
                         </label>
-                        <input  id="submit" type="submit" value="Submit"
+                        
                     </div>
             </fieldset>
         </form>
@@ -104,7 +104,7 @@
         document.getElementById('start').addEventListener('click', () => {
           const userInputNBC = document.getElementById('NBC').value;
           const userInputCCI = document.getElementById('CCI').value;
-          const userTF = document.getElementById('M2').value;
+          const userTF = document.getElementById('TF').value;
          
           const userStart = 1                 
           // const user = tg.initDataUnsafe.user; NOT SUPPORTED DURING INLINE BUTTON LAUNCH
@@ -114,7 +114,7 @@
            userStart:userStart,
            userInputNBC: userInputNBC,
            userInputCCI: userInputCCI,
-           userInputM2: userInputM2,
+           userTF: userTF
            
           }));
         });
