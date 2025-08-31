@@ -96,7 +96,7 @@
         </form>
         <br>
         <button id="start" >Launch Signals</button>
-        <button id="stop" >Stop Signals</button>
+        
         
 
     </main>
@@ -109,36 +109,34 @@
         tg.ready();
 
         document.getElementById('start').addEventListener('click', () => {
-          const userInput = document.getElementById('NBC').value;
-                            document.getElementById('CCI').value;
-                            document.getElementById('M2').value;
-                            document.getElementById('M3').value;
-                            document.getElementById('M5').value;
-                            document.getElementById('M10').value;
+          const userInputNBC = document.getElementById('NBC').value;
+          const userInputCCI = document.getElementById('CCI').value;
+          const userInputM2 = document.getElementById('M2').value;
+          const userInputM3 = document.getElementById('M3').value;
+          const userInputM5 = document.getElementById('M5').value;
+          const userInputM10 = document.getElementById('M10').value;
           const userStart = 1                 
           // const user = tg.initDataUnsafe.user; NOT SUPPORTED DURING INLINE BUTTON LAUNCH
 
           tg.sendData(JSON.stringify({
            timestamp: Date.now(),
            userStart:userStart,
-           userInput: userInput
+           userInput: userInputNBC,
+           userInput: userInputCCI,
+           userInput: userInputM2,
+           userInput: userInputM3,
+           userInput: userInputM5,
+           userInput: userInputM10,
           }));
         });
         
         document.getElementById('stop').addEventListener('click', () => {
-          const userInput = document.getElementById('NBC').value;
-                            document.getElementById('CCI').value;
-                            document.getElementById('M2').value;
-                            document.getElementById('M3').value;
-                            document.getElementById('M5').value;
-                            document.getElementById('M10').value;
           const userStart = 0                 
           // const user = tg.initDataUnsafe.user; NOT SUPPORTED DURING INLINE BUTTON LAUNCH
 
           tg.sendData(JSON.stringify({
            timestamp: Date.now(),
-           userStart:userStart,
-           userInput: userInput
+           userStart:userStart
           }));
         });
 
