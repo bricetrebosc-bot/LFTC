@@ -81,7 +81,13 @@
                 
                     <div align="center">
                         <label>
-                         <input  type="checkbox" name="M2" id="TF" value="M2" >M2
+                         <input  type="checkbox" name="M2" id="TFM2" >M2
+                        </label>
+                         <input  type="checkbox" name="M3" id="TFM3" >M3
+                        </label>
+                         <input  type="checkbox" name="M5" id="TFM5"  >M5
+                        </label>
+                         <input  type="checkbox" name="M10" id="TFM10" >M10
                         </label>
                         
                     </div>
@@ -104,7 +110,10 @@
         document.getElementById('start').addEventListener('click', () => {
           const userInputNBC = document.getElementById('NBC').value;
           const userInputCCI = document.getElementById('CCI').value;
-          const userTF = document.getElementById('TF').checked;
+          const userTFM2 = document.getElementById('TFM2').checked;
+          const userTFM3 = document.getElementById('TFM3').checked;
+          const userTFM5 = document.getElementById('TFM5').checked;
+          const userTFM10 = document.getElementById('TFM10').checked;
          
           const userStart = 1                 
           // const user = tg.initDataUnsafe.user; NOT SUPPORTED DURING INLINE BUTTON LAUNCH
